@@ -41,10 +41,29 @@ function createRandom(){
     // console.log(r2);
     // console.log(g1);
     // console.log(g2);
-
+    // color1.value ="linear-gradient(rgb(" 
+	// + r1 + ", " + g1 +", " + b1 
+	// + "))";
+    color1.value = RGBToHex(r1,g1,b1);
+    color2.value = RGBToHex(r2,g2,b2);
     css.textContent = body.style.background + ";";
 
 }
+
+function RGBToHex(r,g,b) {
+    r = r.toString(16);
+    g = g.toString(16);
+    b = b.toString(16);
+  
+    if (r.length == 1)
+      r = "0" + r;
+    if (g.length == 1)
+      g = "0" + g;
+    if (b.length == 1)
+      b = "0" + b;
+  
+    return "#" + r + g + b;
+  }
 
 color1.addEventListener("input", setgradient);
 color2.addEventListener("input", setgradient);
