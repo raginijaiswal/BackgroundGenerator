@@ -30,23 +30,16 @@ function createRandom(){
     let g2 = Numbergenerator();
     let b1 = Numbergenerator();
     let b2 = Numbergenerator();
-    body.style.background=
-    "linear-gradient(to right,rgb(" 
-	+ r1 + ", " + g1 +", " + b1 
-	+ "), rgb("
-	+ r2 + ", " + g2 +", " + b2
-	+ "))";
-    // "linear-gradient(to right, rgb(Numbergenerator(), Numbergenerator(), Numbergenerator()), rgb(Numbergenerator(), Numbergenerator(), Numbergenerator()))";
-    // console.log(typeof(r1));
-    // console.log(r2);
-    // console.log(g1);
-    // console.log(g2);
-    // color1.value ="linear-gradient(rgb(" 
-	// + r1 + ", " + g1 +", " + b1 
-	// + "))";
     color1.value = RGBToHex(r1,g1,b1);
     color2.value = RGBToHex(r2,g2,b2);
-    css.textContent = body.style.background + ";";
+    setgradient();
+
+    // body.style.background=
+    // "linear-gradient(to right,rgb(" 
+	// + r1 + ", " + g1 +", " + b1 
+	// + "), rgb("
+	// + r2 + ", " + g2 +", " + b2
+	// + "))";
 
 }
 
