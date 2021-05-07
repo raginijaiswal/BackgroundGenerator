@@ -11,7 +11,6 @@ function setgradient(){
     +","
     +color2.value
     +")"
-    console.log("color2.value");
 
     css.textContent = body.style.background + ";";
 }
